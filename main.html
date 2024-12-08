@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Games List!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .header {
+            width: 100%;
+            max-width: 800px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .header h1 {
+            color: #333;
+        }
+
+        .button-container {
+            margin-bottom: 20px;
+        }
+
+        .button-container button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .button-container button:hover {
+            background-color: #0056b3;
+        }
+
+        .game-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            width: 100%;
+            max-width: 800px;
+        }
+
+        .game-item {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            text-align: center;
+            width: 200px;
+        }
+
+        .game-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .game-item h3, .game-item h4 {
+            margin: 10px 0 0;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Welcome to my games hub</h1>
+    </div>
+    <div class="button-container">
+        <button>Games that I want</button>
+        <button>Games that I'm playing</button>
+    </div>
+    <div class="game-list">
+        <div class="game-item">
+            <img src="https://image.jeuxvideo.com/images-sm/p2/x/e/xes3p20f.jpg" alt="Xenosaga III (PS2)">
+            <h3>Xenosaga III (PS2)</h3>
+        </div>
+        <div class="game-item">
+            <img src="https://image.jeuxvideo.com/images/p2/g/r/grd3p20f.jpg" alt="Grandia III (PS2)">
+            <h4>Grandia III (PS2)</h4>
+        </div>
+    </div>
+</body>
+</html>
